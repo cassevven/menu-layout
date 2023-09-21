@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 14px;
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+li:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.menu-item .title, .menu-item .price {
+    font-weight: bold; 
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.menu-item.special {
+grid-row: 2 ;
+grid-column: 2;
+}
+
+.logo {
+    grid-column: 2;
+}
+
+.menu-item.special li {
+    display: grid;
+    grid-template: auto / 3fr 1fr
+}
+
+.menu-item.special li .description {
+    grid-row: 2;
+}
